@@ -1,0 +1,53 @@
+/* ============================================================
+   TH true MILK — Spacing, radii, shadows, motion
+   Soft, rounded, generous. The brand reads premium-but-friendly,
+   so corners are well-rounded and shadows are soft & low.
+   ============================================================ */
+
+:root {
+  /* spacing scale (4px base) */
+  --space-0: 0;
+  --space-1: 0.25rem;  /* 4 */
+  --space-2: 0.5rem;   /* 8 */
+  --space-3: 0.75rem;  /* 12 */
+  --space-4: 1rem;     /* 16 */
+  --space-5: 1.5rem;   /* 24 */
+  --space-6: 2rem;     /* 32 */
+  --space-7: 2.5rem;   /* 40 */
+  --space-8: 3rem;     /* 48 */
+  --space-9: 4rem;     /* 64 */
+  --space-10: 5rem;    /* 80 */
+  --space-12: 7rem;    /* 112 */
+
+  /* radii — rounded, matching DIN Round's soft personality */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 26px;
+  --radius-2xl: 36px;
+  --radius-pill: 999px;
+  --radius-circle: 50%;
+
+  /* shadows — soft, cool-navy tinted, never harsh black */
+  --shadow-xs: 0 1px 2px rgba(15, 35, 71, 0.06);
+  --shadow-sm: 0 2px 6px rgba(15, 35, 71, 0.07);
+  --shadow-md: 0 6px 18px rgba(15, 35, 71, 0.08);
+  --shadow-lg: 0 14px 38px rgba(15, 35, 71, 0.12);
+  --shadow-xl: 0 28px 64px rgba(15, 35, 71, 0.16);
+  --shadow-gold: 0 8px 24px rgba(168, 145, 90, 0.28);
+
+  /* focus ring */
+  --focus-ring: 0 0 0 3px var(--ring);
+
+  /* motion — gentle, never bouncy/aggressive */
+  --ease-out: cubic-bezier(0.22, 0.61, 0.36, 1);   /* @kind other */
+  --ease-in-out: cubic-bezier(0.45, 0, 0.25, 1);   /* @kind other */
+  --dur-fast: 120ms;  /* @kind other */
+  --dur-base: 200ms;  /* @kind other */
+  --dur-slow: 360ms;  /* @kind other */
+
+  /* layout */
+  --container: 1200px;
+  --container-wide: 1360px;
+}

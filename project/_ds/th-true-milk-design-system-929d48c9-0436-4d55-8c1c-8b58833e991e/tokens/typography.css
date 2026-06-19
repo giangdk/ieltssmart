@@ -1,0 +1,44 @@
+/* ============================================================
+   TH true MILK — Typography tokens
+   One family does all the work: DIN Round OT — a soft, rounded,
+   highly legible geometric sans. Light for big display numerals,
+   Medium for headings/labels, Regular for body, Bold for emphasis.
+   ============================================================ */
+
+:root {
+  /* families */
+  --font-sans: "DIN Round OT", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-display: "DIN Round OT", "Segoe UI", system-ui, sans-serif;
+  --font-mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+
+  /* weights */
+  --fw-light: 300;   /* @kind font */
+  --fw-regular: 400; /* @kind font */
+  --fw-medium: 500;  /* @kind font */
+  --fw-bold: 700;    /* @kind font */
+
+  /* type scale (1.250 major-third-ish, tuned) */
+  --text-2xs: 0.6875rem;  /* 11px */
+  --text-xs:  0.75rem;    /* 12px */
+  --text-sm:  0.875rem;   /* 14px */
+  --text-base:1rem;       /* 16px */
+  --text-md:  1.125rem;   /* 18px */
+  --text-lg:  1.375rem;   /* 22px */
+  --text-xl:  1.75rem;    /* 28px */
+  --text-2xl: 2.25rem;    /* 36px */
+  --text-3xl: 3rem;       /* 48px */
+  --text-4xl: 4rem;       /* 64px */
+  --text-5xl: 5.5rem;     /* 88px */
+
+  /* line heights */
+  --leading-tight: 1.08;
+  --leading-snug: 1.22;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.7;
+
+  /* letter spacing — DIN Round is geometric; tighten display, track caps */
+  --tracking-tight: -0.02em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.04em;
+  --tracking-caps: 0.12em;  /* eyebrows / overlines */
+}

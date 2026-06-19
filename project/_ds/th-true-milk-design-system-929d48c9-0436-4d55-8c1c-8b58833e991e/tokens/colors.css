@@ -1,0 +1,113 @@
+/* ============================================================
+   TH true MILK — Color tokens
+   Brand DNA: deep brand Navy + champagne Gold, on clean White.
+   Accent "fresh" Sky blue (clean milk / sky / water) and natural
+   Green (farm, herbal). Warm-neutral greys keep the system soft.
+   Base values first, semantic aliases second.
+   ============================================================ */
+
+:root {
+  /* ---- Brand Navy (primary) ---- sampled from logo #183D6E */
+  --navy-50:  #f2f6fa;
+  --navy-100: #e5ecf4;
+  --navy-200: #c2d0e2;
+  --navy-300: #8fa9c9;
+  --navy-400: #5c82ac;
+  --navy-500: #35608f;
+  --navy-600: #244c82;
+  --navy-700: #183d6e; /* ★ brand navy */
+  --navy-800: #14305a;
+  --navy-900: #0f2347;
+  --navy-950: #0a1730;
+
+  /* ---- Champagne Gold (secondary) ---- sampled from flower mark */
+  --gold-50:  #faf6ea;
+  --gold-100: #f7efd9;
+  --gold-200: #f1e2bc; /* champagne highlight */
+  --gold-300: #e4d2a6;
+  --gold-400: #d6be84;
+  --gold-500: #c9ae6c; /* ★ brand gold */
+  --gold-600: #bd9e59;
+  --gold-700: #a8915a;
+  --gold-800: #8a7339;
+  --gold-900: #6b5827;
+
+  /* gradient gold used on the floral mark / premium accents */
+  --gold-gradient: linear-gradient(135deg, #f1e2bc 0%, #c9ae6c 38%, #a8915a 72%, #8a7339 100%); /* @kind color */
+
+  /* ---- Fresh Sky (clean milk / water accent) ---- */
+  --sky-50:  #eef8fd;
+  --sky-100: #d6eefa;
+  --sky-200: #abdcf3;
+  --sky-300: #74c4e9;
+  --sky-400: #3fa9da;
+  --sky-500: #2e9bd6; /* ★ fresh accent */
+  --sky-600: #2280b6;
+  --sky-700: #1d6691;
+
+  /* ---- Natural Green (farm / herbal) ---- */
+  --green-50:  #eef6e9;
+  --green-100: #dcedd0;
+  --green-300: #9cc97f;
+  --green-500: #5a9e3f; /* ★ natural accent */
+  --green-600: #4a8633;
+  --green-700: #3a6a28;
+
+  /* ---- Warm neutrals ---- */
+  --white:     #ffffff;
+  --neutral-25:  #fbfbfc;
+  --neutral-50:  #f6f7f9;
+  --neutral-100: #eef0f3;
+  --neutral-200: #e1e4ea;
+  --neutral-300: #cbd0d9;
+  --neutral-400: #a3abb8;
+  --neutral-500: #79828f;
+  --neutral-600: #586170;
+  --neutral-700: #3f4754;
+  --neutral-800: #2a313c;
+  --neutral-900: #1c2433;
+
+  /* ---- Functional ---- */
+  --success: #4a8633;
+  --success-bg: #eef6e9;
+  --warning: #c9912b;
+  --warning-bg: #fbf3e0;
+  --error:   #cf3b34;
+  --error-bg: #fbeceb;
+  --info:    #2e9bd6;
+  --info-bg: #eef8fd;
+
+  /* ============================================================
+     Semantic aliases — reference these in components, not raw scale
+     ============================================================ */
+  --brand:            var(--navy-700);
+  --brand-strong:     var(--navy-800);
+  --brand-soft:       var(--navy-100);
+  --accent:           var(--gold-500);
+  --accent-strong:    var(--gold-700);
+  --accent-soft:      var(--gold-100);
+  --fresh:            var(--sky-500);
+
+  /* text */
+  --text-strong:   var(--navy-900);
+  --text-body:     var(--neutral-800);
+  --text-muted:    var(--neutral-500);
+  --text-faint:    var(--neutral-400);
+  --text-on-brand: var(--white);
+  --text-on-accent:var(--navy-900);
+  --text-link:     var(--navy-700);
+
+  /* surfaces */
+  --surface-page:   var(--neutral-50);
+  --surface-card:   var(--white);
+  --surface-sunken: var(--neutral-100);
+  --surface-brand:  var(--navy-700);
+  --surface-brand-deep: var(--navy-900);
+  --surface-inverse: var(--navy-900);
+
+  /* borders / lines */
+  --border:        var(--neutral-200);
+  --border-strong: var(--neutral-300);
+  --border-brand:  var(--navy-700);
+  --ring:          color-mix(in srgb, var(--navy-700) 35%, transparent);
+}
